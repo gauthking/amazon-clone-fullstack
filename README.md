@@ -2,7 +2,7 @@
 
 This is my first REACT App and I was able to clone the Amazon E-Comm Website and add functionalities like AddtoCart, Register, Login, Logout and Payment features
 
-**Note: This App is still under Development! **
+**Note: This App is still under Development!**
 
 ## Tools Used
 
