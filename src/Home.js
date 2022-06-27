@@ -23,6 +23,11 @@ function Home() {
             <div className="home__row">
                 <Product image="https://m.media-amazon.com/images/I/81QEJYyspjL._AC_SX679_.jpg" title="SAMSUNG LC49RG90SSNXZA 49-Inch CRG9 Curved Gaming Monitor, Black, QHD, 120Hz" price={1099.63} rating={5} />
             </div>
+            <div className="home__row">
+                <Product title="PlayStation 5 Console" price={499.99} image="https://m.media-amazon.com/images/I/619BkvKW35L._SX522_.jpg" rating={5} />
+                <Product title="Marshall Stanmore II Voice Black Speaker With Amazon Alexa" price={379.99} image="https://m.media-amazon.com/images/I/71wTTzKIkAL._AC_SX679_.jpg" rating={4} />
+                <Product title="Apple iPad Pro 12.9-inch, Wi-Fi, 3rd Generation 64GB - Space Gray(Renewed)" price={594.99} image="https://m.media-amazon.com/images/I/61DsXT1ldtL._AC_SY679_.jpg" rating={5} />
+            </div>
         </div>
     )
 }
