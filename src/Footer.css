@@ -1,0 +1,14 @@
+.footer {
+  height: fit-content;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #131921;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

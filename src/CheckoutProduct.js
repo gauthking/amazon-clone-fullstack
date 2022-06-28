@@ -2,16 +2,17 @@ import React from 'react'
 import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
 
-function CheckoutProduct({ id, title, image, price, rating }) {
+function CheckoutProduct({ id, image, title, price, rating }) {
     const [{ basket }, dispatch] = useStateValue();
     const removeFromBasket = () => {
         //remove the item from the cart
         // inorder to manipulate the list of items in the cart we need to use the useStateValue hook
 
         dispatch({
-            type: "REMOVE_FROM_CART",
+            type: 'REMOVE_FROM_CART',
             id: id,
-        })
+            title: title,
+        });
 
 
     }
@@ -26,7 +27,7 @@ function CheckoutProduct({ id, title, image, price, rating }) {
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct__rating">
-                    {Array(rating).fill().map(() => (
+                    {Array(rating).fill().map((_, i) => (
                         <p>⭐</p>
                     ))}
                 </div>

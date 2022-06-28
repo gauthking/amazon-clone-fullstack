@@ -4,6 +4,7 @@ import "./Register.css";
 import { auth } from './firebase';
 
 
+
 function Register() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
@@ -12,12 +13,17 @@ function Register() {
 
     const register = e => {
         e.preventDefault();
-
+        auth.displayName = name;
         auth.createUserWithEmailAndPassword(email, password).then((auth => {
             if (auth) {
-                navigate('/login')
+                navigate('/login');
+                return auth.user.updateProfile({
+                    displayName: name
+                })
             }
-        }))
+        })).catch(error => alert(error.message));
+
+
     }
 
     return (

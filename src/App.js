@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Register from "./Register";
+import Footer from "./Footer";
+import Payment from "./Payment";
 
 function App() {
   const [{ }, dispatch] = useStateValue();
@@ -41,10 +43,11 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/register" element={<><Register /></>} />
-          <Route path="/login" element={<><Login /></>} />
-          <Route path="/checkout" element={<><Header /> <Checkout /></>} />
-          <Route path="/" element={<><Header /> <Home /></>} />
+          <Route path="/payment" element={<><Header /> <Payment /></>} />
+          <Route path="/register" element={<><Register /> <Footer /></>} />
+          <Route path="/login" element={<><Login /> <Footer /> </>} />
+          <Route path="/checkout" element={<><Header /> <Checkout /> <Footer /></>} />
+          <Route path="/" element={<><Header /> <Home /> <Footer /></>} />
         </Routes>
       </div>
     </Router>
