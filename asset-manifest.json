@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amazon-clone-fullstack/static/css/main.9ece9aea.css",
+    "main.js": "/amazon-clone-fullstack/static/js/main.6bcfc610.js",
+    "static/js/787.70603148.chunk.js": "/amazon-clone-fullstack/static/js/787.70603148.chunk.js",
+    "index.html": "/amazon-clone-fullstack/index.html",
+    "main.9ece9aea.css.map": "/amazon-clone-fullstack/static/css/main.9ece9aea.css.map",
+    "main.6bcfc610.js.map": "/amazon-clone-fullstack/static/js/main.6bcfc610.js.map",
+    "787.70603148.chunk.js.map": "/amazon-clone-fullstack/static/js/787.70603148.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ece9aea.css",
+    "static/js/main.6bcfc610.js"
+  ]
+}
