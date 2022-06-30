@@ -4,13 +4,33 @@ This is my first REACT App and I was able to clone the Amazon E-Comm Website and
 
 **Note: This App is still under Development!**
 
+The deployed app has an earlier version, some backend features (like payment transacs and realtime database) have been updated in the source code and you can access it through the development mode for now due to some technical issues. They'll be resolved soon and the latest version will be updated here itself soon.
 ### Deployed APP - https://clone-react-63f94.web.app/
 
 ## Tools Used
 
-This App is made with React(Frontend) and for Backend Operations I've made use of Firebase
+This App is made with React(Frontend) and for Backend Operations I've made use of Firebase.
 
-You can make developments to this project by running:
+## Some Dependencies
+
+Install Firebase - `npm i firebase`
+Firebase Tools - `npm install -g firebase-tools`
+
+Setup Stripe for Payment Functionality : 
+`npm i @stripe/stripe-js`
+`npm i @stripe/react-stripe-js`
+
+Install Axios
+`npm i axios`
+
+CD into functions folder and install these dependencies
+`npm i express`
+`npm i cors`
+`npm i stripe`
+
+Make sure to put your secret key of your STRIPE Account inside of ./functions/index.js
+
+You can view the APP in the DEV mode by:
 
 ### `npm start`
 
