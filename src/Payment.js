@@ -73,7 +73,7 @@ function Payment() {
                 type: 'EMPTY_BASKET'
             })
 
-            navigate('/payment');
+            navigate('/orders');
         })
 
         // const payload = await stripe
