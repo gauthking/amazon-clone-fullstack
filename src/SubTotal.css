@@ -16,7 +16,7 @@
   gap: 2px;
 }
 
-.subtotal > button {
+.subtotal__button {
   background-color: #f0c14b;
   border-radius: 2px;
   width: 100%;
@@ -27,7 +27,7 @@
   color: #111;
 }
 
-.subtotal > button:active {
+.subtotal__button:active {
   background-color: burlywood;
   box-shadow: 0 1px #666;
   transform: translateY(1px);

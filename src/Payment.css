@@ -27,6 +27,51 @@
 }
 
 .payment__address,
-.payment__items {
+.payment__items,
+.payment__details {
   flex: 0.8;
+}
+
+.payment__address > form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.payment__address > form > label {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.payment__address > form > div > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: rgba(209, 173, 106, 0.265);
+  width: 78%;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.payment__address > form > div > input:focus {
+  border: 5px solid rgba(255, 166, 0, 0.285);
+  border-radius: 4px;
+}
+
+.payment__address > form > button {
+  padding: 8px;
+  margin: 8px 0;
+  width: 20%;
+  background-color: bisque;
+  border: 2px solid rgba(255, 166, 0, 0.288);
+  border-radius: 10px;
+}
+
+.payment__priceContainer > button {
+  background-color: #f0c14b;
+  border-radius: 2px;
+  width: 50%;
+  height: 28px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
 }

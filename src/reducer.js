@@ -3,8 +3,13 @@
 
 export const initialState = {
     basket: [],
-    user: null //initially
+    user: null, //initially
+    address: []
 };
+
+//selector
+// export const getBasketTotal = (basket) =>
+//     basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
     // console.log(action);
@@ -15,6 +20,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: [...state.basket, action.item],
+            };
+        case "DELIV_ADDRESS":
+            return {
+                ...state,
+                address: [...state.address, action.add],
             };
         case "REMOVE_FROM_CART":
             const index = state.basket.findIndex(
@@ -41,6 +51,12 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 user: action.user
+            }
+
+        case "EMPTY_BASKET":
+            return {
+                ...state,
+                basket: []
             }
         default:
             return state;
