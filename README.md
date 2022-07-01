@@ -14,19 +14,26 @@ This App is made with React(Frontend) and for Backend Operations I've made use o
 ## Some Dependencies
 
 Install Firebase - `npm i firebase`
+
 Firebase Tools - `npm install -g firebase-tools`
 
 Setup Stripe for Payment Functionality : 
 `npm i @stripe/stripe-js`
+
 `npm i @stripe/react-stripe-js`
 
 Install Axios
+
 `npm i axios`
 
 CD into functions folder and install these dependencies
 `npm i express`
+
 `npm i cors`
+
 `npm i stripe`
+
+Install Material UI Dependency - `npm install @mui/material @emotion/react @emotion/styled`
 
 Make sure to put your secret key of your STRIPE Account inside of ./functions/index.js
 
