@@ -33,7 +33,8 @@ CD into functions folder and install these dependencies
 
 `npm i stripe`
 
-Install Material UI Dependency - `npm install @mui/material @emotion/react @emotion/styled`
+Install Material UI Dependency - `npm install @mui/material @emotion/react @emotion/styled` and npm install @mui/icons-material
+
 
 Make sure to put your secret key of your STRIPE Account inside of ./functions/index.js
 
